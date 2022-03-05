@@ -1,0 +1,27 @@
+<div class="container-fluid heads">
+    <div class="card text-center">
+        <h2>Send Email</h2>
+        
+        <form (submit)="sendEmail()">
+
+          <mat-form-field class="field" appearance="standard">
+            <mat-label>Name</mat-label>
+            <input matInput required [(ngModel)]="inputs.name" name="name">
+          </mat-form-field> 
+
+          <mat-form-field  class="field" appearance="standard">
+            <mat-label>Surname</mat-label>
+            <input matInput required [(ngModel)]="inputs.surname" name="surname">
+          </mat-form-field>
+
+          <mat-form-field class="field"  appearance="standard">
+            <mat-label>Address</mat-label>
+            <textarea matInput rows="10" required [(ngModel)]="inputs.address" name="address"></textarea>
+          </mat-form-field>
+
+          <button type="submit" mat-raised-button color="primary">Submit</button>
+          <button type="reset" mat-raised-button color="accent">Reset</button>
+        </form>
+    </div>
+</div>
+

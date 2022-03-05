@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: EUREKA-SERVER
+    
+server:  port: 8099
+      
+eureka:  client:    register-with-eureka: false    fetch-registry: false  instance:    hostname: localhost
